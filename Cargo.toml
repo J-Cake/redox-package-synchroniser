@@ -1,0 +1,18 @@
+[package]
+name = "redox-package-synchroniser"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "server"
+path = "server/src/main.rs"
+
+[[bin]]
+name = "client"
+path = "client/src/main.rs"
+
+[workspace]
+members = [
+    "client",
+    "server"
+]
